@@ -1,0 +1,23 @@
+ 1git init
+Această comandă transformă un director într-un depozit Git gol.
+Acesta este primul pas în crearea unui depozit. După rularea git init, 
+este posibilă adăugarea și comiterea fișierelor/directoarelor.
+ 2git add
+Adaugă fișiere în zona de pregătire pentru Git. Înainte ca un fișier să fie
+disponibil pentru a fi trimis într-un depozit, fișierul trebuie adăugat la indexul Git
+(zona de pregătire). Există câteva modalități diferite de a folosi git add, adăugând directoare întregi,
+fișiere specifice sau toate fișierele neînscenate.
+ 3 git commit
+Înregistrați modificările aduse fișierelor într-un depozit local. Pentru o referință ușoară,
+ fiecare commit are un ID unic.
+Este cea mai bună practică să includeți un mesaj la fiecare comit, care explică modificările făcute într-un comit. 
+Adăugarea unui mesaj de confirmare ajută la găsirea unei anumite modificări sau la înțelegerea modificărilor.
+ 4starea git
+Această comandă returnează starea curentă a depozitului.
+git status va returna ramura curentă de lucru. Dacă un fișier se află în zona de pregătire, dar nu este comis,
+acesta se afișează cu starea git. Sau, dacă nu există modificări, nu va returna nimic de comitat, directorul de lucru curat
+5 git config
+Cu Git, există multe configurații și setări posibile. git config este modul de atribuire a acestor setări. 
+Două setări importante sunt user user.name și user.email. Aceste valori stabilesc ce adresă de e-mail și numele vor fi 
+comise de pe un computer local. Cu git config, se folosește un flag --global pentru a scrie setările în toate depozitele 
+de pe un computer. Fără un flag --global, setările se vor aplica numai depozitului curent în care vă aflați în prezent.
